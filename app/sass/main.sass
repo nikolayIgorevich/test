@@ -175,7 +175,7 @@ body
 			position: absolute
 			display: block
 			top: 25px
-			left: 110px
+			left: 108px
 			font-size: 85px
 			font-weight: 800
 			color: #F46D6D;
@@ -202,4 +202,66 @@ body
 		line-height: 26px
 		padding-top: 30px
 
+// ended block team
+
+.services-wrap
+	background-color: #F1F1F1
+
+.services-item-wrap
+	padding: 120px 0 100px 0
+	font-size: 0
+
+.services-item
+	width: 31.3%
+	display: inline-block
+	position: relative
+	margin-right: 3%
+	text-align: center
+	&:last-child
+		margin-right: 0
+	&__title
+		display: block
+		width: 100%
+		font-size: 26px
+		padding: 15px 10px
+		color: #fff
+		background-color: #485460
+	&__price
+		display: block
+		width: 100%
+		font-size: 20px
+		padding: 17px 10px
+		color: #485460
+		background-color: #F8F9FB
+	&__list
+		list-style-type: none
+		& li
+			width: 100%
+			border-top: 1px solid #ECF0F1
+			background-color: #fff
+			&:last-child
+				height: 100px
+				display: block
+				background-color: #F8F9FB
+			& span
+				font-size: 14px
+				line-height: 45px
+				color: #8C9299
+	&__btn
+		width: 170px
+		position: absolute
+		bottom: 4.5%
+		left: 27%
+		padding: 10px 0
+		display: inline-block
+		font-size: 17px
+		background-color: #788492
+		color: #fff
+		border-radius: 5px
+		&:hover
+			background-color: $accent
+			transition: all .4s
+		&:hover ~ .services-item__title
+			background-color: $accent
+			transition: all .4s
 @import "media" // Всегда в конце

@@ -9,5 +9,7 @@ $(function() {
            });
         });
  // слайдер
-
+// btn.onmouseover = function(){title.style.backgroundColor = '#49CBCD'};
+// btn.onmouseout = function(){title.style.backgroundColor = ''};
+// наведение на кнопку
 });
