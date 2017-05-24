@@ -25,6 +25,9 @@ body input:required:valid,
 body textarea:required:valid
 	color: #666
 
+*
+	box-sizing: border-box
+
 html, body
 	height: 100%
 
@@ -37,11 +40,112 @@ body
 	overflow-x: hidden
 	opacity: 1
 
-.img-responsive
-	display: block
-	max-width: 100%
-	height: auto
-wda
+.clearfix:before,
+.clearfix:after
+	content: ""
+	display: table
 
+.clearfix:after 
+	clear: both
+
+.container
+	width: 100%
+	max-width: 1170px;
+	margin: 0 auto
+
+.header
+	width: 100%
+	background-color: #fff
+
+.header-logo
+	float: left
+	margin: 30px 0
+
+.top-mnu
+	float: right
+	margin: 0 50px 0 20px
+	&__list
+		list-style-type: none
+		display: inline-block
+	&__list:last-child
+		margin-right: 0
+	&__link
+		padding: 40px 25px 40px 20px
+		display: block
+		font-size: 15px
+		line-height: 24px
+		color: #484C55
+		border-bottom: 3px solid transparent
+		&:hover
+			background-color: #F8F9FB
+			color: $accent
+			border-bottom: 3px solid $accent
+			transition: all .6s
+
+.slider-bg
+	width: 100%
+	min-height: 569px
+	background: url(../img/slider-bg.jpg) no-repeat
+	background-size: cover
+
+.slider-text
+	width: 700px
+	margin: 0 auto
+	color: #fff
+	text-align: center
+	padding: 125px 0
+	&__title
+		font-size: 63px
+		line-height: 24px
+		font-weight: 600
+	&__descr
+		font-size: 23px
+		line-height: 37px
+		padding: 0 160px
+	&__btn
+		display: inline-block
+		position: relative
+		overflow: hidden
+		margin-top: 60px
+		padding: 20px 40px
+		color: #fff
+		font-size: 26px
+		line-height: 24px
+		border: 3px solid #fff
+		border-radius: 10px
+		span
+			z-index: 20
+		&:after
+			background: #fff
+			content: ""
+			height: 155px
+			left: -75px
+			opacity: .2
+			position: absolute
+			top: -50px
+			transform: rotate(35deg)
+			transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1)
+			width: 50px
+			z-index: -10
+		&:hover
+			&:after
+				left: 120%
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1)
+
+.owl-prev, .owl-next
+	width: 50px
+	height: 50px
+	position: absolute
+	top: 270px
+	border-radius: 50%
+	text-align: center
+
+.owl-prev
+	left: -75px
+	background: #fff url(../img/slider-nav-prev.png) 50% 50% no-repeat
+
+.owl-next
+	right: -75px
+	background: #fff url(../img/slider-nav-next.png) 50% 50% no-repeat
 
 @import "media" // Всегда в конце
