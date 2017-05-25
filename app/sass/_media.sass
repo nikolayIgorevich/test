@@ -17,16 +17,125 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+	.toggle-mnu
+		display: block
+		width: 30px
+		height: 30px
+		margin-right: 10px
+		margin-top: 45px
+		float: right
+	.top-mnu
+		display: none
+		float: right
+		min-width: 300px
+		position: absolute
+		margin: 0
+		top: 97px
+		right: 25px
+		z-index: 3
+		background-color: #fff
+		text-align: right
+		&.in
+			display: block
+		&__list
+			display: block
+		&__link
+			padding: 10px 25px
+	.fix-menu .top-mnu__link
+		padding: 10px 25px
+	.fix-menu .top-mnu
+		top: 85px
+
+	.team-item
+		width: 50%
+		margin-bottom: 40px
+		&:nth-child(3),
+		&:nth-child(4)
+			margin-bottom: 0
+	.services-item-wrap
+		text-align: center
+	.services-item
+		width: 47%
+		margin-right: 6%
+		&:nth-child(2)
+			margin-right: 0
+		&:last-child
+			margin-top: 50px
+			margin-right: 0
+	&__btn
+		left: 14%
 	/**/
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
+	.contact-info
+		padding-right: 70px
+
 	/**/
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+	.slider-bg
+		min-height: 500px
+	.owl-item
+		width: 100%
+	.slider-text
+		width: 100%
+	.slider-text__title
+		font-size: 35px
+	.slider-text__descr
+		padding: 0
+		font-size: 18px
+	.owl-next,
+	.owl-prev
+		width: 35px
+		height: 35px
+	.owl-prev
+		background-position: 40% 50%
+	.owl-next
+		background-position: 60% 50%
+	.slider-text__btn
+		padding: 15px 30px
+	.team-wrap
+		padding: 50px 0
+	.team-title
+		margin-bottom: 60px
+	.team-item
+		width: 100%
+	.team-item:nth-child(3),
+	.team-item:nth-child(4)
+		margin-bottom: 40px
+	.team-wrap .team-item:last-child
+		margin-bottom: 0
+	.services-item
+		width: 100%
+		padding: 0 50px
+		margin-right: 0
+	.services-item:nth-child(2)
+		margin-top: 50px
+	.services-item__btn
+		left: 29%
+	.contact-title
+			padding-bottom: 35px
+	.contact-info
+		width: 100%
+		padding-right: 0
+		text-align: center
+	.contact-block-form
+		width: 100%	
+		margin-top: 50px
+	.my-form
+		text-align: center
+	.my-form input[type=email],
+	.my-form input[type=text]
+		display: block
+		width: 100%
+		margin-bottom: 30px
+	.my-form__mesg
+		margin-top: 0
+		
 	/**/
 
 

@@ -70,4 +70,16 @@ $(window).on('scroll',function() {
     }
 });
 //Липкое меню
+
+$(".toggle-mnu").click(function() {
+		$(this).toggleClass("on");
+		$(".top-mnu").toggleClass("in");
+});
+
+$(".top-mnu>ul>li>a").on("click", function(e){
+      $('.top-mnu').removeClass('in');
+      $(".toggle-mnu").toggleClass("on");
+    });
+
+// Мобильное меню
 });
