@@ -235,7 +235,14 @@
 				<a href="tel:+XX-XXXX - XXXX - XX" class="contact-info__tel">+XX-XXXX - XXXX - XX</a>
 				<a href="mailto:info@mail.com" class="contact-info__mail">info@mail.com</a>
 			</div>
-			<div class="contact-block-form"></div>
+			<div class="contact-block-form">
+				<form action="#" method="post" no-validate="no-validate" id="my-form" class="my-form">
+					<input type="text" name="your-name" required="required" placeholder="Name" class="my-form__name">
+					<input type="email" name="your-email" required="required" placeholder="Email" class="my-form__email">
+					<textarea name="your-message" placeholder="Message" class="my-form__mesg"></textarea>
+					<input type="submit" value="Send" id="formBtn" class="my-form__btn">
+				</form>
+			</div>
 		</div>
 	</div>
 
