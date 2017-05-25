@@ -60,7 +60,11 @@ body
 
 .header
 	width: 100%
+
+.top-header
+	width: 100%
 	background-color: #fff
+	z-index: 10000
 
 .header-logo
 	float: left
@@ -80,12 +84,21 @@ body
 		font-size: 15px
 		line-height: 24px
 		color: #484C55
+		position: relative
 		border-bottom: 3px solid transparent
 		&:hover
 			background-color: #F8F9FB
 			color: $accent
 			border-bottom: 3px solid $accent
-			transition: all .6s
+.scroll-to.active
+			background-color: #F8F9FB
+			color: $accent
+			border-bottom: 3px solid $accent
+.fix-menu
+	& .header-logo
+		margin: 20px 0
+	& .top-mnu__link
+		padding: 25px 25px 25px 20px;
 
 .slider-bg
 	width: 100%
